@@ -1,5 +1,7 @@
 package fracCalc;
+
 import java.util.*;
+
 public class FracCalc {
 
     public static void main(String[] args) 
@@ -13,19 +15,12 @@ public class FracCalc {
 
     
     public static String produceAnswer(String input) {
-    	
-    	String num1 = input;
-    	String operator = "";
-    	String num2 = "";
-    	int numindex = num1.indexOf("+");
-    	//System.out.println(num1.substring(0,numindex));
-    	System.out.println(num1.substring(numindex  + 1));
-    
-    	
+    	int firstSpace = input.indexOf(' ');
+    	String num1 = input.substring(0, firstSpace);
     	return num1;
-    	
+       //input.contentEquals("quit")
     }
-    }
+	}  
 
     
     // TODO: Fill in the space below with any helper methods that you think you will need
